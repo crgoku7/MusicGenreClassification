@@ -14,9 +14,9 @@ custom_css = """
     </style>
 """
 
-loaded_model = pickle.load(open('D:/PRML/trained_model.sav', 'rb'))
-loaded_pca = pickle.load(open('D:/PRML/pca.sav', 'rb'))
-loaded_scaler = pickle.load(open('D:/PRML/scaler.sav', 'rb'))
+loaded_model = pickle.load(open('trained_model.sav', 'rb'))
+loaded_pca = pickle.load(open('pca.sav', 'rb'))
+loaded_scaler = pickle.load(open('scaler.sav', 'rb'))
 
 def music_transform(path):
 
