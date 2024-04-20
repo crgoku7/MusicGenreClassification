@@ -39,7 +39,7 @@ def music_transform(path):
     zero_crossing_rate = librosa.feature.zero_crossing_rate(y)
     spectral_rolloff = librosa.feature.spectral_rolloff(y=y, sr=sr)
     y_harmonic, y_percussive = librosa.effects.hpss(y)
-    tempo, _ = librosa.beat.beat_track(y=y, sr=sr)
+    tempo = librosa.beat.tempo(y=y, sr=sr)
 
     data_array = []
     features = [chromagram,rms,spectral_centroid,spectral_bandwidth,spectral_rolloff,zero_crossing_rate,y_harmonic,y_percussive]
