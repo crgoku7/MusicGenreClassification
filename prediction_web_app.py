@@ -39,7 +39,7 @@ def music_transform(path):
     zero_crossing_rate = librosa.feature.zero_crossing_rate(y)
     spectral_rolloff = librosa.feature.spectral_rolloff(y=y, sr=sr)
     y_harmonic, y_percussive = librosa.effects.hpss(y)
-    tempo = librosa.beat.tempo(y=y, sr=sr)
+    tempo = librosa.feature.tempo(y=y, sr=sr)
 
     data_array = []
     features = [chromagram,rms,spectral_centroid,spectral_bandwidth,spectral_rolloff,zero_crossing_rate,y_harmonic,y_percussive]
@@ -53,20 +53,8 @@ def music_transform(path):
     for i in range(20):
         data_array.append(mfccs_mean[i])
         data_array.append(mfccs_var[i])
-
-    music_data = pd.DataFrame(np.array(data_array).reshape(1,57),columns = ['chroma_stft_mean', 'chroma_stft_var', 'rms_mean', 'rms_var',
-       'spectral_centroid_mean', 'spectral_centroid_var',
-       'spectral_bandwidth_mean', 'spectral_bandwidth_var', 'rolloff_mean',
-       'rolloff_var', 'zero_crossing_rate_mean', 'zero_crossing_rate_var',
-       'harmony_mean', 'harmony_var', 'perceptr_mean', 'perceptr_var', 'tempo',
-       'mfcc1_mean', 'mfcc1_var', 'mfcc2_mean', 'mfcc2_var', 'mfcc3_mean',
-       'mfcc3_var', 'mfcc4_mean', 'mfcc4_var', 'mfcc5_mean', 'mfcc5_var',
-       'mfcc6_mean', 'mfcc6_var', 'mfcc7_mean', 'mfcc7_var', 'mfcc8_mean',
-       'mfcc8_var', 'mfcc9_mean', 'mfcc9_var', 'mfcc10_mean', 'mfcc10_var',
-       'mfcc11_mean', 'mfcc11_var', 'mfcc12_mean', 'mfcc12_var', 'mfcc13_mean',
-       'mfcc13_var', 'mfcc14_mean', 'mfcc14_var', 'mfcc15_mean', 'mfcc15_var',
-       'mfcc16_mean', 'mfcc16_var', 'mfcc17_mean', 'mfcc17_var', 'mfcc18_mean',
-       'mfcc18_var', 'mfcc19_mean', 'mfcc19_var', 'mfcc20_mean', 'mfcc20_var'])
+    
+    music_data = pd.DataFrame(np.array(data_array).reshape(1,57),columns = ['chroma_stft_mean', 'chroma_stft_var', 'rms_mean', 'rms_var','spectral_centroid_mean', 'spectral_centroid_var','spectral_bandwidth_mean', 'spectral_bandwidth_var', 'rolloff_mean','rolloff_var', 'zero_crossing_rate_mean', 'zero_crossing_rate_var','harmony_mean', 'harmony_var', 'perceptr_mean', 'perceptr_var', 'tempo','mfcc1_mean', 'mfcc1_var', 'mfcc2_mean', 'mfcc2_var', 'mfcc3_mean','mfcc3_var', 'mfcc4_mean', 'mfcc4_var', 'mfcc5_mean', 'mfcc5_var','mfcc6_mean', 'mfcc6_var', 'mfcc7_mean', 'mfcc7_var', 'mfcc8_mean','mfcc8_var', 'mfcc9_mean', 'mfcc9_var', 'mfcc10_mean', 'mfcc10_var','mfcc11_mean', 'mfcc11_var', 'mfcc12_mean', 'mfcc12_var', 'mfcc13_mean','mfcc13_var', 'mfcc14_mean', 'mfcc14_var', 'mfcc15_mean', 'mfcc15_var','mfcc16_mean', 'mfcc16_var', 'mfcc17_mean', 'mfcc17_var', 'mfcc18_mean','mfcc18_var', 'mfcc19_mean', 'mfcc19_var', 'mfcc20_mean', 'mfcc20_var'])
     scaled_data_music = loaded_scaler.transform(music_data)
 
     scaled_dataframe = pd.DataFrame(scaled_data_music, columns = music_data.columns)
