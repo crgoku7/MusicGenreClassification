@@ -4,6 +4,16 @@
 This project implements machine learning algorithms to automatically classify music into different genres. It explores techniques for feature extraction from audio data and training models to identify genres based on these features.
 
 
+## WebPage
+
+Visit our project website for a detailed overview of the materials and a comprehensive understanding of the project goals and objectives.
+
+[www.google.com](www.google.com)
+## Video Reference
+
+You can find a comprehensive project overview in the reference video provided.
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Q0QwvZKG_6Q/0.jpg)](https://www.youtube.com/watch?v=Q0QwvZKG_6Q)
 ## Dataset
 
 For the classification purpose, we have used the GTZAN dataset, a popular benchmark dataset for music genre classification tasks.
@@ -17,8 +27,21 @@ The dataset can be found here [Data](https://github.com/crgoku7/MusicGenreClassi
 
 We performed the following tasks on our project:
 - Feature Extraction with PCA (Principal Component Analysis): We will first extract relevant features from the audio data using Principal Component Analysis (PCA). PCA helps reduce dimensionality by identifying the most informative features in the data, which can improve model performance and training efficiency.
+
 - Classification Model Evaluation: To establish a baseline and compare performance, we will train and evaluate several machine learning models on the extracted features. These models include K-Nearest Neighbors (KNN), Decision Trees, Support Vector Machines (SVM), Adaboost, and Logistic Regression. Evaluating their accuracy on a validation set will allow us to compare different approaches and find out which model performs the best.
+
 - Final Classification with Artificial Neural Networks (ANN): We will implement an Artificial Neural Network (ANN) for the final music genre classification task. ANNs have proven effective in handling complex patterns in audio data, potentially leading to superior classification accuracy compared to the initial models
+## GitHub Repository
+
+- Data Folder: The "data" folder contains the GTZAN dataset, including two CSV files with audio features for various genres. Additionally, it houses sub-folders containing audio files and their corresponding waveform images.
+
+- music_classification.ipynb: This file serves as the core codebase for audio genre classification, implementing algorithms and processes for the classification task.
+
+- genre_classifier.keras: This file stores the pre-trained weights and biases for the Artificial Neural Network (ANN) model, enabling faster execution of the main code file for audio genre classification.
+
+- Mid-Progress Report.pdf: This file provides a detailed description of the dataset utilized and outlines the proposed methods for achieving music genre classification.
+
+- Web Page: 
 ## Tech Stack
 
 - Python
@@ -27,6 +50,8 @@ We performed the following tasks on our project:
 - Scikit Learn
 - TensorFlow
 - Librosa
+- Matplotlib
+- Seaborn
 ## Contributors🛩️
 
 - Deepak Bhatter [@Deepak](https://www.linkedin.com/in/deepak-bhatter5512?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoCYT3PQmTJKYeWeOME6%2BdA%3D%3D)
