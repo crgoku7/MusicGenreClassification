@@ -9,6 +9,11 @@ This project implements machine learning algorithms to automatically classify mu
 Visit our project website for a detailed overview of the materials and a comprehensive understanding of the project goals and objectives.
 
 [www.google.com](www.google.com)
+## Video Reference
+
+You can find a comprehensive project overview in the reference video provided.
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Q0QwvZKG_6Q/0.jpg)](https://www.youtube.com/watch?v=Q0QwvZKG_6Q)
 ## Dataset
 
 For the classification purpose, we have used the GTZAN dataset, a popular benchmark dataset for music genre classification tasks.
