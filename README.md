@@ -10,7 +10,7 @@ Visit our project website for a detailed overview of the materials and a compreh
 [www.google.com](www.google.com)
 
 To evaluate the model, feel free to try out the following web app:
-[Music Classifer](https://musicclassifier.streamlit.app/)
+[Music Classifier](https://musicclassifier.streamlit.app/)
 ## Video Reference
 
 You can find a comprehensive project overview in the reference video provided.
