@@ -7,7 +7,7 @@ This project implements machine learning algorithms to automatically classify mu
 ## WebPage
 
 Visit our project website for a detailed overview of the materials and a comprehensive understanding of the project goals and objectives.
-[www.google.com](www.google.com)
+[Music Classification Webpage](https://crgoku7.github.io/MusicGenreClassification/)
 
 To evaluate the model, feel free to try out the following web app:
 [Music Classifier](https://musicclassifier.streamlit.app/)
@@ -18,7 +18,7 @@ You can find a comprehensive project overview in the reference video provided.
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/QeqPgnr5Q2U/0.jpg)](https://youtu.be/QeqPgnr5Q2U)
 ## Dataset
 
-For the classification purpose, we have used the GTZAN dataset, a popular benchmark dataset for music genre classification tasks.
+For the purpose of classification, we have used the GTZAN dataset, a popular benchmark dataset for music genre classification tasks.
 
 The GTZAN dataset consists of 1,000 audio recordings, each 30 seconds long, categorized into 10 distinct music genres: blues, classical, country, disco, hip-hop, jazz, metal, pop, reggae, and rock. All audio files are in WAV format with a sampling rate of 22,050 Hz and mono channel.
 
@@ -51,7 +51,7 @@ We performed the following tasks on our project:
 
 - trained_model.sav: It preserves the top-performing model for predicting the genres of new audio files within the web application, ensuring accurate and efficient classification.
 
-- report.pdf: It gives a detailed explaination of all the work done so far including the dataset explaination, implemented approaches, libraries and tech stack used, etc.
+- report.pdf: It gives a detailed explanation of all the work done so far including the dataset explanation, implemented approaches, libraries and tech stack used, etc.
 
 - index.html: This file comprises HTML code detailing a project overview webpage.
 
