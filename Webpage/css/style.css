@@ -1,0 +1,374 @@
+/* CSS Document */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+
+body {
+	text-align: center;
+	font-family: Google Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #000;
+	background-color: #fff;
+	line-height: 1.5em;
+}
+
+p a, table.affiliations a, table.menu a {
+	border-bottom: solid 1px #ddd;
+	color: inherit;
+	text-decoration: none;
+}
+
+.isDisabled {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+  }
+
+table.menu {
+	font-size: 13pt;
+	font-weight: 500;
+}
+
+strong, b {
+    font-weight: 500;
+}
+
+p.author {
+    font-size: 13pt;
+    text-align: center;
+    margin: 0 0 0 0;
+    padding: 0 3em 0 3em;
+}
+
+.author {
+	margin: 0pt 10pt;
+}
+
+sup {
+    font-size: 0.7em;
+    position: relative;
+    top: 0em;
+    vertical-align: super;
+    font-size: smaller;
+}
+
+
+.container {
+	width: 1000px;
+	min-height: 1200px;
+	max-height: 999999px; /* prevents font boosting */
+	margin: 0 auto; /* top and bottom, right and left */
+	/*	border: 1px solid #000; */
+	text-align: left; /* top, right, bottom, left */
+	color: #000;
+	background: #fff;
+	padding-top: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+}
+
+.venue {
+	font-size: 120%;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.title {
+	font-family: Google Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	font-size: 200%;
+	font-weight: 500;
+	display: block;
+	text-align: center;
+	margin-top: 14px; /* h1 default */
+	margin-bottom: 0px;
+	padding-top: 40px;
+	padding-bottom: 5px;
+	line-height: 1.5em;
+}
+
+table.affiliations {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    width: 80%;
+    max-width: 400px;
+}
+
+table.affiliations td {
+    padding-top: .5em;
+    /*width: 10%;*/
+    font-size: 11pt;
+}
+
+table#video {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.caption {
+	font-style: italic;
+	font-size: 100%;
+}
+
+.label {
+	line-height: 1.2;
+	text-align: center;
+}
+
+.highlight {
+	color: blue;
+}
+
+.section{
+	font-size: 140%;
+	font-weight: 500;
+}
+
+.bibtex {
+	font-family: Google Sans, Courier, monospace;
+	white-space: pre;
+}
+
+.date {
+	font-size: 80%;
+}
+
+table.data td {
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	vertical-align: top;
+}
+
+code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+
+.carousel-control-prev {
+ margin-left: -50px;
+ height: 300px;
+ }
+ .carousel-control-next {
+ margin-right: -50px;
+ height: 300px;
+ }
+ .carousel-item {
+ /* height: 234px; */
+ overflow: hidden;
+ /* width: 100%; */
+ text-align: center;
+ }
+ .carousel-item img {
+ /* width: 100%; */
+ }
+ .carousel-inner .item img {
+ margin:auto;
+ }
+ .carousel-control-next,.carousel-control-prev{
+ opacity:1
+ }
+ .carousel-control-next:focus,.carousel-control-next:hover,.carousel-control-prev:focus,.carousel-control-prev:hover{
+ opacity:1
+ }
+ .slider-navigation-next,.slider-navigation-previous{
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ position:absolute;
+ width:42px;
+ height:42px;
+ background:gray center center no-repeat;
+ background-size:20px 20px;
+ border:1px solid #fff;
+ border-radius:25091983px;
+ box-shadow:0 2px 5px #3232321a;
+ top:50%;
+ margin-top:-20px;
+ left:0;
+ cursor:pointer;
+ transition:transform .3s,opacity .3s,-webkit-transform .3s
+ }
+ .slider-navigation-next svg,.slider-navigation-previous svg{
+ width:25%;
+ background:gray
+ }
+ .slider-navigation-next{
+ left:auto;
+ right:0;
+ background:gray center center no-repeat;
+ background-size:20px 20px
+ }
+
+ .teaser-carousel {
+    /* width: 670px; */
+    width: 800px;
+    margin: auto;
+    height: 400px;
+    /* height: 600px; */
+ }
+
+ .caption {
+    font-family: Chalkduster;
+    color: gray;
+	width: auto;
+	display: inline-block;
+	padding: 11px 15px 11px 15px;
+	border-radius: 10px;
+ }
+
+ .caption:hover {
+    cursor: pointer;
+    color: black;
+ }
+
+ .caption-active {
+    color: black;
+	background-color: #F2E34C;
+ }
+
+ #videoCarousel{
+     margin-top:5px;
+ }
+
+
+.teaser-img {
+    /* width: 300px !important; */
+    width: 800px !important;
+}
+
+* {
+	font-family: Google Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  
+  .responsive-cell-block {
+	min-height: 75px;
+  }
+  
+  .text-blk {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	line-height: 25px;
+  }
+  
+  .responsive-container-block {
+	min-height: 75px;
+	height: fit-content;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	justify-content: space-evenly;
+  }
+  
+  .team-head-text {
+	font-size: 48px;
+	text-align: center;
+  }
+  
+  .team-head-text {
+	line-height: 50px;
+	width: 100%;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 50px;
+	margin-left: 0px;
+  }
+  
+  .container {
+	max-width: 1380px;
+	margin-top: 60px;
+	margin-right: auto;
+	margin-bottom: 60px;
+	margin-left: auto;
+	padding-top: 0px;
+	padding-right: 30px;
+	padding-bottom: 0px;
+	padding-left: 30px;
+  }
+  
+  .card {
+	text-align: center;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 30px;
+	padding-right: 25px;
+	padding-bottom: 30px;
+	padding-left: 25px;
+  }
+  
+  .card-container {
+	width: 280px;
+	margin-top: 0px;
+	margin-right: 10px;
+	margin-bottom: 25px;
+	margin-left: 10px;
+  }
+  
+  .name {
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	font-size: 18px;
+
+  }
+  
+  .position {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+  }
+  
+  .feature-text {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	color: rgb(122, 122, 122);
+	line-height: 30px;
+  }
+  
+  .social-icons {
+	width: 70px;
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  .team-image-wrapper {
+	clip-path: circle(50% at 50% 50%);
+	width: 130px;
+	height: 130px;
+  }
+  
+  .team-member-image {
+	max-width: 100%;
+  }
+  
+  @media (max-width: 500px) {
+	.card-container {
+	  width: 100%;
+	  margin-top: 0px;
+	  margin-right: 0px;
+	  margin-bottom: 25px;
+	  margin-left: 0px;
+	}
+  }
